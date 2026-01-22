@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <span class="pageName">Progress</span>
+    <div class="progressContainer">
+        <svg class="svgBox" viewBox="0 0 70 70">
+            <circle cx="35" cy="35" r="30"></circle>
+            <circle class="movingCircle" cx="35" cy="35" r="30"></circle>
+        </svg>
+        <div class="buttonsContainer">
+            <div>
+                <label><input class="progressBarValue" type="number" min="0" max="100" step="1">Value</label>
+            </div>
+            <div class="switchGroup">
+                <label class="progressBarAnimate">
+                    <input type="checkbox" name="progressBarAnimate">
+                    <span class="slider"></span>
+                </label>
+                <span>Animate</span>
+            </div>
+            <div class="switchGroup">
+                <label class="progressBarHide">
+                    <input type="checkbox" name="progressBarHide">
+                    <span class="slider"></span>
+                </label>
+                <span>Hide</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
