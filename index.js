@@ -18,10 +18,10 @@ class Progress {
     }
 
     setValue(value) {
-        if (value <= 0) value = 0;
-        if (value >= 100) value = 100;
-        this.value = value;
-        this.updateDashOffset();
+        if (value >= 0 && value <= 100) {
+            this.value = value;
+            this.updateDashOffset();
+        }
     }
 
     updateDashOffset() {
